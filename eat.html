@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Pancake Sunday</title>
+    <meta name="author" content="name">
+    <meta name="description" content="description here">
+    <meta name="keywords" content="keywords,here">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=font1|font2|etc" type="text/css">
+    <link rel="stylesheet" href="/styles/style.css" type="text/css">
+</head>
+
+<body>
+
+    <header id="main-header">
+        <h1>Pancake Sunday</h1>
+    </header>
+
+    <main>
+        <section id="eat-form">
+            <h2>Make your pancake!</h2>
+            <form>
+                <!--Name of Pancake-->
+                <label for="namePancake">Name your pancake:</label><br>
+                <input type="text" id="namePancake" name="namePancake"><br>
+
+                <!-- Savoury or Sweet-->
+                <p>Type of pancake</p>
+                <input type="radio" id="savoury" name="pancakeType" value="Savoury">
+                <label for="savoury">Savoury</label><br>
+                <input type="radio" id="sweet" name="pancakeType" value="sweet">
+                <label for="sweet">Sweet</label><br>
+
+                <!--Ingredients-->
+                <p>What ingredients would you like:</p>
+                <input type="checkbox" id="cheese" name="cheese" value="cheese">
+                <label for="cheese">Cheese</label><br>
+
+                <input type="checkbox" id="bacon" name="bacon" value="bacon">
+                <label for="bacon">Bacon</label><br>
+
+                <input type="checkbox" id="onion" name="onion" value="onion">
+                <label for="onion">Onion</label><br>
+
+                <input type="checkbox" id="parsley" name="parsley" value="parsley">
+                <label for="parsley">Parsley</label><br>
+
+                <!--How many?-->
+                <p>How many?</p>
+                <input id="number" type="number" value="1" min="1" max="3" step="1">
+
+
+            </form>
+        </section>
+        <br>
+        <section id="eat-buttons">
+            <input type=button onClick="parent.location='eat.html'" value='EAT'>
+            <input type=button onClick="parent.location='cook.html'" value='COOK'>
+            <input type=button onClick="parent.location='index.html'" value='HOME'>
+
+        </section>
+
+
+    </main>
+
+    <footer>
+
+    </footer>
+    <script src="/scripts//script.js"></script>
+</body>
+
+</html>
