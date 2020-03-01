@@ -1,3 +1,10 @@
+//All variable arrays
+
+const names = ["Filip", "Erin"];
+
+
+
+
 (function () {
 
     // Get the current date
@@ -44,3 +51,21 @@
 
     document.getElementById("current-eater").innerHTML = eater;
 })();
+
+function getWeekNumber(date) {
+    return date.getWeek();
+}
+
+function getWeekNumber() {
+    return (new Date()).getWeek();
+}
+
+var numberOfWeek = getWeekNumber(new Date());
+
+if (numberOfWeek % 2 == 1) {
+    // cooker = names[0]
+    // eater = names[1]
+} else {
+    // cooker = erin
+    // eater = filip
+}

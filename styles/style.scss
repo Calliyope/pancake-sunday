@@ -1,3 +1,29 @@
 input {
     color: orangered;
 }
+
+.rad,
+.set {
+    display: none;
+    opacity: 0;
+    border: none; //delete if you want the borders around the checkboxes
+}
+
+.rad:checked+.set {
+    display: block;
+    opacity: 1;
+}
+
+.btn {
+    display: inline-block;
+    border: 2px inset grey;
+    border-radius: 6px;
+    padding: 2px 3px;
+    cursor: pointer
+}
+
+.btn:hover {
+    border-color: orangered;
+    color: orangered;
+    transition: .75s ease;
+}

@@ -1,4 +1,31 @@
 input {
   color: orangered;
 }
+
+.rad,
+.set {
+  display: none;
+  opacity: 0;
+  border: none;
+}
+
+.rad:checked + .set {
+  display: block;
+  opacity: 1;
+}
+
+.btn {
+  display: inline-block;
+  border: 2px inset grey;
+  border-radius: 6px;
+  padding: 2px 3px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  border-color: orangered;
+  color: orangered;
+  -webkit-transition: .75s ease;
+  transition: .75s ease;
+}
 /*# sourceMappingURL=style.css.map */

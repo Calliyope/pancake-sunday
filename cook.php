@@ -15,7 +15,16 @@
 
 <body>
 
-    <header id="main-header">
+    <?php
+    if (!isset($_COOKIE["order"])) {
+        echo "No pancake order has been placed yet!";
+    } else {
+        $order = json_decode($_COOKIE["order"]);
+        var_dump($order);
+    }
+    ?>
+
+    <!-- <header id="main-header">
         <h1>Pancake Sunday</h1>
     </header>
 
@@ -24,7 +33,6 @@
             <h2>Cook the pancakes!</h2>
             <h3> /name/ ordered /number of/ /savoury/ pancake(s) this week</h3>
             <h4>They have titled it the:</h4>
-            <!--name of pancake-->
             <p id="nameOfPancake">Cheesey Onion Supreme</p>
 
             <h3>You'll need:</h3>
@@ -52,7 +60,7 @@
     <footer>
 
     </footer>
-    <script src="/scripts//script.js"></script>
+    <script src="/scripts//script.js"></script> -->
 </body>
 
 </html>
